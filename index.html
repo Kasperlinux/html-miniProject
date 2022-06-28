@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <link rel="stylesheet" href="nav.css">
+
+	<style>
+		body {
+			color: hsl(209, 61%, 16%);
+			background-image: url("https://cdn.wallpapersafari.com/8/93/pQ8JPU.jpg");
+			
+		}
+
+		img {
+			width: 100%;
+			display: block;
+            border-radius: 500px;
+		}
+
+		.btn {
+			background: white;
+			color: rgb(118, 165, 235);
+			padding: 0.375rem 0.75rem;
+			letter-spacing: 3px;
+			display: inline-block;
+			border: 2px solid transparent;
+			border-radius: .5rem;
+			cursor: pointer;
+		}
+
+		.blog {
+			background: hsl(210, 36%, 96%);
+		}
+
+		.card {
+			height: 500px;
+			position: relative;
+			width: 500px;
+			margin-left: 27rem;
+		}
+
+		.card-side {
+			-webkit-transition: all 2s linear;
+			transition: all 2s linear;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 0.5rem;
+			visibility: visible;
+		}
+
+		.card-back {
+			background: rgb(55, 217, 232);
+			-webkit-transform: rotateY(180deg);
+			transform: rotateY(180deg);
+			display: grid;
+			place-items: center;
+		}
+
+		.card:hover .card-front {
+			-webkit-transform: rotateY(-180deg);
+			transform: rotateY(-180deg);
+		}
+
+		.card:hover .card-back {
+			-webkit-transform: rotateY(0);
+			transform: rotateY(0);
+		}
+
+		.card-info {
+			padding: 1rem 1.5rem;
+		}
+
+		.card-front img {
+			height: 13rem;
+			-o-object-fit: cover;
+			object-fit: cover;
+			height: 500px;
+		}
+        
+	</style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="form.html">Form</a>
+        <a href="">GitHub Repo</a>
+        <a href="https://anthonys.ac.in/">Official Website</a>
+      </div>
+       
+
+
+
+	<div class="section blog">
+		<div class="card">
+
+			<!-- front of the card -->
+			<div class="card-side card-front">
+				<img src="logo.jfif"
+					alt="" />
+			</div>
+
+			<!-- card back -->
+			<div class="card-side card-back">
+				<button class="btn">
+					Read More
+				</button>
+			</div>
+		</div>
+	</div>
+    <CENTER><h1 style="font-family: 'Brush Script MT', cursive;">Ever More and Better Ever</h1></CENTER>
+</body>
+
+</html>

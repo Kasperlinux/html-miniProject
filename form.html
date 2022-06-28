@@ -1,0 +1,115 @@
+<html>
+<head>
+    <title>Simple Student Record</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+     
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="form.html">Form</a>
+        <a href="">GitHub Repo</a>
+        <a href="info.html">About</a>
+      </div>
+
+    <CENTER><h2 style="font-family: 'Brush Script MT', cursive;">Student Records</h2></CENTER>
+    <table>
+        <!--Row-1-->
+        <tr>
+            <!--Column-1-->
+            <td>
+                <!--Form-->
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <h3>Student Form</h3>
+                  <!--div-1-->
+                    <div>
+                        <label>Full Name</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="userNamevalidationError">This field is required</label>
+                        <!--Input User Name-->
+                        <input type="text" name="userName" id="userName" placeholder="Enter the user Name">
+                    </div>
+                    <!--div-2-->
+                    <div>
+                        <label>Rollno</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="rollNovalidationError" >This field is required</label>
+                        <!--Input Roll No-->
+                        <input type="text" name="rollNo" id="rollNo" placeholder="Enter the Roll number">
+                    </div>
+                    <!--div-3-->
+                    <div>
+                        <label>Department and Semester</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="stdClassvalidationError">This field is required</label>
+                       <!--Input Student Class-->
+                        <input type="text" name="stdClass" id="stdClass" placeholder="Enter the Student  Department and Semester">
+                    </div>
+                    <!--div-4-->
+                    <div>
+                        <label>Semester Percentage</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="tsubvalidationError">This field is required</label>
+                        <!--Input Total Subject-->
+                        <input type="number" step="any" name="tsub" id="tsub" placeholder="Enter the Semester Percentage">
+                    </div>
+                    <!--div-5-->
+                    <div>
+                        <label>Date of birth</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="agevalidationError">This field is required</label>
+                        <!--Input Age-->
+                        <input type="date" name="age" id="age" placeholder="Enter the Date of Birth">
+                    </div>
+                    <!--div-6-->
+                    <div>
+                        <label>Contact</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="contactvalidationError">This field is required</label>
+                        <!--Input Age-->
+                        <input type="number" name="contact" id="contact" placeholder="Enter the Contact Number">
+                    </div>
+                    <!--div-7-->
+                    <div>
+                        <label>Gender (F | M)</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="gendervalidationError">This field is required</label>
+                        <!--Input Age-->
+                        <input type="gender" name="gender" id="gender" placeholder="F | M">
+                    </div>
+                    <!--div-8-->
+                    <div class="form-action-buttons">
+                        <!--Input Button-->
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+                <script src="script.js"></script>
+            </td>
+            <!--Column-2-->
+            <td>
+                <!--Nested Table-->
+                <table class="list" id="stdlist">
+                    <!--Table Head-->
+                    <thead>
+                        <!--Row-2-->
+                        <tr>
+                            <th>Full Name</th>
+                            <th> Roll no</th>
+                            <th>Department and Semester</th>
+                            <th>Semester Percentage</th>
+                            <th>DOB</th>
+                            <th>Contact</th>
+                            <th>Gender</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <!--Table Body-->
+                    <tbody>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
